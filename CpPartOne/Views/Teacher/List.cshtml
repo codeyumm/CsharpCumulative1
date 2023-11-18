@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<CpPartOne.Models.Teacher>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<a href="~/Home/index" class="back-link">Back to home</a>
+
+<h2>Teachers List</h2>
+<p>Click on teacher's name to see more details</p>
+
+<div class="list-container">
+
+ 
+    @foreach (var teacher in Model)
+    {
+        // from model that we have passed from TeacherController
+        // we can access data
+        // creating link for another view that displays teachers data
+
+        <p class="list-item">@teacher.TeacherId <a href="~/Teacher/show/@teacher.TeacherId"> @teacher.TeacherFname  @teacher.TeacherLname </a></p>
+      
+    }
+
+</div>

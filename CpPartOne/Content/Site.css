@@ -1,0 +1,155 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.logo{
+    color: lightgreen;
+}
+
+.main-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-container a:hover {
+    letter-spacing: 2px;
+}
+
+nav {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for home page */
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    width: 100vw;
+}
+
+.item {
+    background-color: lightgreen;
+    color: black;
+    font-size: 1.5em;
+    height: 250px;
+    width: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+.item a:hover {
+    letter-spacing: 2px;
+}
+
+
+.list-container{
+    background-color: gray;
+    padding: 6px;
+}
+.list-item{
+    font-size: 1.5em;
+}
+
+.list-item a{
+    color: black;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.list-item a:hover{
+    background-color: black;
+    padding: 4px;
+}
+
+
+/*style for show view */
+.wrapper{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.show-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    width: max-content;
+    align-self: center;
+
+    font-size: 1.2em;
+    padding: 22px;
+}
+
+.avatar{
+    height: 80px;
+    width: 80px;
+
+}
+
+.back-link{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 1.2em;
+}
+
+.back-link:hover {
+        color: lightgreen;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    width: 320px;
+    height: 22px;
+    font-size: 16px;
+}
+
+.btn-submit{
+    background-color: black;
+    padding: 4px 16px;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-submit:hover{
+    color: lightgreen;
+    cursor: pointer;
+}
+

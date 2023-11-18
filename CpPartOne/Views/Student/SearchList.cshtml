@@ -1,0 +1,33 @@
+﻿@model IEnumerable <CpPartOne.Models.Student>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<div class="top-container">
+    <a href="~/Home/index" class="back-link">Back to home</a>
+
+    <div class="search-container">
+        <form method="GET" action="~/Student/searchlist">
+            <input type="text" name="searchInput" class="search-bar" />
+            <input type="submit" value="Search" class="btn-submit"/>
+        </form>
+    </div>
+</div>
+
+<h2>Student List</h2>
+<p>Click on students's name to see more details</p>
+
+<div class="list-container">
+
+    @foreach (var student in Model)
+    {
+        <p class="list-item">
+            @student.StudentId
+            <a href="~/Student/show/@student.StudentId"> @student.StudentFirstName  @student.StudentLastName </a>
+        </p>
+    }
+
+</div>

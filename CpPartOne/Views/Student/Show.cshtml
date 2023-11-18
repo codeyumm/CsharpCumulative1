@@ -1,0 +1,23 @@
+﻿@model CpPartOne.Models.Student
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>   @ViewBag.sid   </h2>
+
+<a href="~/Student/list" class="back-link">Back to list</a>
+
+
+<!-- Image source - User profile icons created by Tanah Basah - Flaticon -->
+
+<div class="wrapper">
+    <div class="show-container">
+
+        <img src="~/Content/Images/avatar-image.png" alr="avatar photo of person" class="avatar" />
+        <p>Student number : @Model.StudentNumber</p>
+        <p>Fullname : @Model.StudentFirstName @Model.StudentLastName</p>
+        <p>Enrol date : @Model.StudentEnrollDate</p>
+
+    </div>
+</div>

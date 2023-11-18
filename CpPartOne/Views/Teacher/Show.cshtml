@@ -1,0 +1,21 @@
+﻿@model CpPartOne.Models.Teacher
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<a href="~/Teacher/list" class="back-link">Back to list</a>
+
+
+<!-- Image source - User profile icons created by Tanah Basah - Flaticon -->
+
+<div class="wrapper">
+    <div class="show-container">
+        <img src="~/Content/Images/avatar-image.png" alr="avatar photo of person" class="avatar" />
+        <p>Emloyee number : @Model.EmployeeNumber</p>
+        <p>Fullname : @Model.TeacherFname @Model.TeacherLname</p>
+        <p>Hiring date : @Model.HireDate</p>
+        <p> Salary : @Model.Salary</p>
+        <p> Class name : @Model.ClassName</p>
+    </div>
+</div>
